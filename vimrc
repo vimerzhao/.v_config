@@ -40,6 +40,10 @@ elseif has('mac')
 elseif has('unix')
 endif
 
+" 自定义配置
+set wrap
+
+" 插件 + 配置
 Plugin 'SirVer/ultisnips'
 " If you want :UltiSnipsEdit to split your window.
 "let g:UltiSnipsEditSplit="vertical"
@@ -52,4 +56,33 @@ Plugin 'SirVer/ultisnips'
 "set rtp+=~/.v_config/.vim
 
 
+
 Plugin 'ycm-core/YouCompleteMe'
+let g:ycm_confirm_extra_conf = 0
+
+let g:deoplete#enable_at_startup = 1
+
+Plugin 'octol/vim-cpp-enhanced-highlight'
+let g:cpp_class_scope_highlight = 1
+let g:cpp_member_variable_highlight = 1
+let g:cpp_class_decl_highlight = 1
+let g:cpp_posix_standard = 1
+let g:cpp_experimental_simple_template_highlight = 1
+"which works in most cases, but can be a little slow on large files. Alternatively set
+let g:cpp_experimental_template_highlight = 1
+"which is a faster implementation but has some corner cases where it doesn't work.
+let g:cpp_concepts_highlight = 1
+let g:cpp_no_function_highlight = 1
+
+
+Bundle 'plasticboy/vim-markdown'
+
+" vim-markdown
+let g:vim_markdown_folding_disabled = 1
+let g:vim_markdown_conceal = 0
+let g:vim_markdown_toc_autofit = 1
+
+
+autocmd BufNewFile,BufRead *.asc set filetype=asciidoc
+
+let @t='0f[a[lxA�kbpp0f]xxi | :wj'

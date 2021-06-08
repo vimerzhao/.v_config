@@ -7,6 +7,7 @@ vimer's config file set
 
 ```
 ln -s `pwd`/vimrc ~/.vimrc.local
+#ln -s `pwd`/vimrc.bundles ~/.vimrc.bundles.local
 ```
 
 ## Tmux
